@@ -1,0 +1,352 @@
+[
+    {
+        "city": "Mumbai",
+        "temperature": 30.99,
+        "description": "smoke",
+        "humidity": 42,
+        "wind_speed": 2.57
+    },
+    {
+        "city": "Delhi",
+        "temperature": 22.05,
+        "description": "haze",
+        "humidity": 46,
+        "wind_speed": 1.03
+    },
+    {
+        "city": "Bangalore",
+        "temperature": 23.35,
+        "description": "broken clouds",
+        "humidity": 82,
+        "wind_speed": 7.6
+    },
+    {
+        "city": "Hyderabad",
+        "temperature": 27.23,
+        "description": "haze",
+        "humidity": 54,
+        "wind_speed": 2.57
+    },
+    {
+        "city": "Ahmedabad",
+        "temperature": 27.02,
+        "description": "smoke",
+        "humidity": 34,
+        "wind_speed": 1.54
+    },
+    {
+        "city": "Chennai",
+        "temperature": 28.16,
+        "description": "mist",
+        "humidity": 85,
+        "wind_speed": 6.17
+    },
+    {
+        "city": "Kolkata",
+        "temperature": 24.97,
+        "description": "haze",
+        "humidity": 61,
+        "wind_speed": 2.06
+    },
+    {
+        "city": "Surat",
+        "temperature": 26.99,
+        "description": "haze",
+        "humidity": 61,
+        "wind_speed": 2.57
+    },
+    {
+        "city": "Pune",
+        "temperature": 26.34,
+        "description": "clear sky",
+        "humidity": 42,
+        "wind_speed": 1.98
+    },
+    {
+        "city": "Jaipur",
+        "temperature": 23.62,
+        "description": "haze",
+        "humidity": 38,
+        "wind_speed": 1.03
+    },
+    {
+        "city": "Lucknow",
+        "temperature": 21.99,
+        "description": "haze",
+        "humidity": 64,
+        "wind_speed": 1.03
+    },
+    {
+        "city": "Kanpur",
+        "temperature": 21.64,
+        "description": "clear sky",
+        "humidity": 37,
+        "wind_speed": 1.98
+    },
+    {
+        "city": "Nagpur",
+        "temperature": 24.01,
+        "description": "haze",
+        "humidity": 53,
+        "wind_speed": 0
+    },
+    {
+        "city": "Visakhapatnam",
+        "temperature": 27.94,
+        "description": "mist",
+        "humidity": 78,
+        "wind_speed": 4.12
+    },
+    {
+        "city": "Indore",
+        "temperature": 25.1,
+        "description": "haze",
+        "humidity": 44,
+        "wind_speed": 0
+    },
+    {
+        "city": "Thane",
+        "temperature": 29.4,
+        "description": "smoke",
+        "humidity": 92,
+        "wind_speed": 2.57
+    },
+    {
+        "city": "Bhopal",
+        "temperature": 23.13,
+        "description": "haze",
+        "humidity": 35,
+        "wind_speed": 0
+    },
+    {
+        "city": "Patna",
+        "temperature": 22.96,
+        "description": "haze",
+        "humidity": 68,
+        "wind_speed": 0
+    },
+    {
+        "city": "Vadodara",
+        "temperature": 27.98,
+        "description": "smoke",
+        "humidity": 44,
+        "wind_speed": 2.06
+    },
+    {
+        "city": "Ghaziabad",
+        "temperature": 22.84,
+        "description": "clear sky",
+        "humidity": 22,
+        "wind_speed": 1.35
+    },
+    {
+        "city": "Ludhiana",
+        "temperature": 19.37,
+        "description": "clear sky",
+        "humidity": 36,
+        "wind_speed": 1.69
+    },
+    {
+        "city": "Agra",
+        "temperature": 23.2,
+        "description": "clear sky",
+        "humidity": 29,
+        "wind_speed": 1.28
+    },
+    {
+        "city": "Nashik",
+        "temperature": 26.21,
+        "description": "few clouds",
+        "humidity": 48,
+        "wind_speed": 3.1
+    },
+    {
+        "city": "Faridabad",
+        "temperature": 22.14,
+        "description": "clear sky",
+        "humidity": 18,
+        "wind_speed": 0.18
+    },
+    {
+        "city": "Meerut",
+        "temperature": 20.98,
+        "description": "clear sky",
+        "humidity": 26,
+        "wind_speed": 1.66
+    },
+    {
+        "city": "Rajkot",
+        "temperature": 28.89,
+        "description": "clear sky",
+        "humidity": 33,
+        "wind_speed": 3.75
+    },
+    {
+        "city": "Kalyan",
+        "temperature": 29.39,
+        "description": "clear sky",
+        "humidity": 100,
+        "wind_speed": 2.68
+    },
+    {
+        "city": "Vasai",
+        "temperature": 25.78,
+        "description": "clear sky",
+        "humidity": 60,
+        "wind_speed": 2.6
+    },
+    {
+        "city": "Varanasi",
+        "temperature": 22.96,
+        "description": "clear sky",
+        "humidity": 46,
+        "wind_speed": 1.38
+    },
+    {
+        "city": "Srinagar",
+        "temperature": 10.77,
+        "description": "clear sky",
+        "humidity": 25,
+        "wind_speed": 1.01
+    },
+    {
+        "city": "Aurangabad",
+        "temperature": 28.05,
+        "description": "haze",
+        "humidity": 57,
+        "wind_speed": 0
+    },
+    {
+        "city": "Dhanbad",
+        "temperature": 22.58,
+        "description": "clear sky",
+        "humidity": 39,
+        "wind_speed": 2.13
+    },
+    {
+        "city": "Amritsar",
+        "temperature": 19.97,
+        "description": "haze",
+        "humidity": 56,
+        "wind_speed": 1.03
+    },
+    {
+        "city": "Navi Mumbai",
+        "temperature": 30.48,
+        "description": "smoke",
+        "humidity": 42,
+        "wind_speed": 2.57
+    },
+    {
+        "city": "Allahabad",
+        "temperature": 22.87,
+        "description": "clear sky",
+        "humidity": 42,
+        "wind_speed": 2.15
+    },
+    {
+        "city": "Howrah",
+        "temperature": 25,
+        "description": "haze",
+        "humidity": 61,
+        "wind_speed": 2.06
+    },
+    {
+        "city": "Ranchi",
+        "temperature": 20.06,
+        "description": "haze",
+        "humidity": 56,
+        "wind_speed": 1.54
+    },
+    {
+        "city": "Gwalior",
+        "temperature": 22.16,
+        "description": "clear sky",
+        "humidity": 37,
+        "wind_speed": 1.96
+    },
+    {
+        "city": "Jabalpur",
+        "temperature": 23.47,
+        "description": "haze",
+        "humidity": 64,
+        "wind_speed": 1.54
+    },
+    {
+        "city": "Coimbatore",
+        "temperature": 28.88,
+        "description": "broken clouds",
+        "humidity": 65,
+        "wind_speed": 1.54
+    },
+    {
+        "city": "Vijayawada",
+        "temperature": 27.97,
+        "description": "few clouds",
+        "humidity": 74,
+        "wind_speed": 2.57
+    },
+    {
+        "city": "Jodhpur",
+        "temperature": 23.65,
+        "description": "clear sky",
+        "humidity": 24,
+        "wind_speed": 2.17
+    },
+    {
+        "city": "Madurai",
+        "temperature": 27.01,
+        "description": "mist",
+        "humidity": 83,
+        "wind_speed": 6.17
+    },
+    {
+        "city": "Raipur",
+        "temperature": 25.08,
+        "description": "haze",
+        "humidity": 44,
+        "wind_speed": 0
+    },
+    {
+        "city": "Kota",
+        "temperature": 23.97,
+        "description": "clear sky",
+        "humidity": 29,
+        "wind_speed": 1.87
+    },
+    {
+        "city": "Guwahati",
+        "temperature": 23.95,
+        "description": "mist",
+        "humidity": 69,
+        "wind_speed": 0
+    },
+    {
+        "city": "Chandigarh",
+        "temperature": 19.03,
+        "description": "clear sky",
+        "humidity": 40,
+        "wind_speed": 2.29
+    },
+    {
+        "city": "Hubli",
+        "temperature": 25.45,
+        "description": "broken clouds",
+        "humidity": 56,
+        "wind_speed": 4.47
+    },
+    {
+        "city": "Mysore",
+        "temperature": 26,
+        "description": "scattered clouds",
+        "humidity": 69,
+        "wind_speed": 1.54
+    },
+    {
+        "city": "Tiruchirappalli",
+        "temperature": 26.06,
+        "description": "broken clouds",
+        "humidity": 89,
+        "wind_speed": 5.14
+    }
+]

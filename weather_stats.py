@@ -1,43 +1,27 @@
-# import requests
-# import json
-
-# api_key="a90f36e32e2e4c45b45ab43c16202922"
-
-
-# city="Bengaluru"
-
-# # API endpoint
-# url = "http://api.openweathermap.org/data/2.5/weather"
-
-# # Parameters
-# params = {
-#     "q": city,
-#     "appid": api_key,
-#     "units": "metric"  # Use 'imperial' for Fahrenheit
-# }
-
-# # Fetch data from API
-# response = requests.get(url, params=params)
-# print(response)
-
-# data = response.json()
-
-# print(json.dumps(data,indent=4))
-
-
-# temp_val=data['main']['temp']
-
-
-# ----------
-
 import requests
 import json
 import os
 from dotenv import load_dotenv
+from datetime import date
 
 load_dotenv(dotenv_path="./.env")
 
 api_key=os.getenv("api_key")
+
+def get_city_list():
+    cities = [
+        "Mumbai", "Delhi", "Bangalore", "Hyderabad", "Ahmedabad",
+        "Chennai", "Kolkata", "Surat", "Pune", "Jaipur",
+        "Lucknow", "Kanpur", "Nagpur", "Visakhapatnam", "Indore",
+        "Thane", "Bhopal", "Patna", "Vadodara", "Ghaziabad",
+        "Ludhiana", "Agra", "Nashik", "Faridabad", "Meerut",
+        "Rajkot", "Kalyan", "Vasai", "Varanasi", "Srinagar",
+        "Aurangabad", "Dhanbad", "Amritsar", "Navi Mumbai", "Allahabad",
+        "Howrah", "Ranchi", "Gwalior", "Jabalpur", "Coimbatore",
+        "Vijayawada", "Jodhpur", "Madurai", "Raipur", "Kota",
+        "Guwahati", "Chandigarh", "Hubli", "Mysore", "Tiruchirappalli"
+    ]
+    return cities
 
 def get_weather(city, api_key):
     """
@@ -52,33 +36,48 @@ def get_weather(city, api_key):
         "appid": api_key,
         "units": "metric"  # 'metric' for Celsius, 'imperial' for Fahrenheit
     }
-    
-    # Send the request to the OpenWeatherMap API
-    response = requests.get(url, params=params)
-    
-    # Check if the response is successful (status code 200)
-    if response.status_code == 200:
-        # Parse the response into JSON
-        data = response.json()
-        
+
+    try:
+        response=requests.get(url,params=params)
+
+        response.raise_for_status()
+
+        if response.status_code == 200:
+            data = response.json()
+
         # Extract specific weather data
         temp = data['main']['temp']
         description = data['weather'][0]['description']
         humidity = data['main']['humidity']
         wind_speed = data['wind']['speed']
         
-        # Print the weather data
-        print(f"Weather for {city}:")
-        print(f"Temperature: {temp}°C")
-        print(f"Description: {description}")
-        print(f"Humidity: {humidity}%")
-        print(f"Wind Speed: {wind_speed} m/s")
-        
-        return temp, description, humidity, wind_speed
-    else:
-        print(f"Error: Unable to fetch data for {city}. Status code: {response.status_code}")
-        return None
+        result = {
+            "city": city,
+            "temperature": temp,
+            "description": description,
+            "humidity": humidity,
+            "wind_speed": wind_speed
+        }
+        return result
+    except requests.exceptions.RequestException as e:
+        raise e
+    
 
-# Example usage
-city = "Bangalore"
-weather_data = get_weather(city, api_key)
+def save_to_json(result):
+    file_path=f"./data/YT_data_{date.today()}.json"
+
+    with open(file_path,"w",encoding="utf-8") as json_data:
+        json.dump(result,json_data,indent=4,ensure_ascii=False)
+    
+
+if __name__ == "__main__":
+    cities = get_city_list()
+    results = []
+
+    for city in cities:
+        data = get_weather(city, api_key)
+        results.append(data)
+
+    # Save all cities data
+    save_to_json(results)
+
